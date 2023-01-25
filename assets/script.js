@@ -38,6 +38,7 @@ ingredients.push(
 }
 }
 
+// This is going to hold the entire HTML markup
 const newInnerHTML = `
 <div class="row">
 			<div class="columns five">
