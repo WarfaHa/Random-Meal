@@ -40,7 +40,7 @@ ingredients.push(
 
 // This is going to hold the entire HTML markup
 const newInnerHTML = `
-<div class="row">
+<div class="row"><h3>${meal.strMeal}</h3> <br>
 			<div class="columns five">
 				<img src="${meal.strMealThumb}" alt="Meal Image">
 				${
@@ -62,7 +62,7 @@ const newInnerHTML = `
 				</ul>
 			</div>
 			<div class="columns seven">
-				<h4>${meal.strMeal}</h4>
+				<h4>Meal Instructions:</h4>
 				<p>${meal.strInstructions}</p>
 			</div>
 		</div>
@@ -70,7 +70,7 @@ const newInnerHTML = `
 			meal.strYoutube
 				? `
 		<div class="row">
-			<h5>Video Recipe</h5>
+			<h5>Video Recipe:</h5>
 			<div class="videoWrapper">
 				<iframe width="420" height="315"
 				src="https://www.youtube.com/embed/${meal.strYoutube.slice(-11)}">
